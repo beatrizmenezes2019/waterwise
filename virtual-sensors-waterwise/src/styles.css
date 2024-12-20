@@ -1,0 +1,43 @@
+:root {
+    --color-brand-01-base: #283B49;
+    --color-brand-01-light:#283B49;
+    --color-brand-02-base: #283B49;
+    --color-brand-03-base: #283B49;
+    --color-neutral-dark-40: #283B49;
+    --color-brand-01-lightest:#2FC0C3;
+    --color-brand-01-lighter:#2FC0C3;
+    --color-brand-01-light:#2FC0C3;
+    --color-brand-01-base:#283B49;
+    --color-brand-01-dark:#283B49;
+    --color-brand-01-darker:#283B49;
+    --color-brand-01-darkest:#283B49;
+    --color-brand-02-base:#283B49;
+    --color-brand-03-base:#283B49;
+    --color-neutral-dark-70:#4a5c60;
+    --color-neutral-dark-80:#2c3739;
+    --color-neutral-dark-90:#1d2426;
+    --color-neutral-dark-95:#0b0e0e;
+    --color-neutral-light-10:#eceeee;
+    --color-neutral-light-20:#CFCFCD;
+    --color-neutral-light-30:#b6bdbf;
+    --color-neutral-light-00:#fff;
+    --color-neutral-light-05:#fbfbfb;
+    --color-neutral-mid-40:#9da7a9;
+    --color-neutral-mid-60:#6e7c7f
+  }
+
+  .logo-waterwise {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo-inf {
+    padding-top: 30px;
+    width: 200px;
+    height: 180px;
+  }
+
+  .logo-ufg {
+    width: 300px;
+    height: 200px;
+  }

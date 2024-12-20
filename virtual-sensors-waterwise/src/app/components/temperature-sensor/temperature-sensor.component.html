@@ -1,0 +1,57 @@
+
+  <po-accordion #accordion p-show-manager-accordion="true">
+    <po-accordion-item p-label="Temperatura">
+      <form [formGroup]="form">
+
+        
+        <po-container
+            [p-no-border]="false"
+            [p-no-padding]="false"
+            p-title="Configurações do Sensor de Temperatura" >
+
+
+            <div class="po-row">
+              <po-input
+                class="po-md-2"
+                p-label="Intervalo inical"
+                formControlName="intervaloInicial"
+              ></po-input>
+              <po-input
+                class="po-md-2"
+                p-label="Intervalo final"
+                formControlName="intervaloFinal"
+              ></po-input>
+
+              <po-input
+                class="po-md-2"
+                p-label="Tempo (segundos)"
+                formControlName="tempoGeracaoDados"
+              ></po-input>
+
+              <div class="po-md-1"></div>
+              <po-info class="po-md-2" p-label="Leitura atual" p-value="{{temperaturaValue}} °C"></po-info>
+              <po-info class="po-md-2" p-label="Origem do Sensor" p-value="Virtual"></po-info>
+              
+              <po-switch #switch (p-change)="changeSwitch()" class="po-md-1" name="switch" p-disabled="false" p-label="Ativo"> </po-switch>
+              
+
+
+            </div>
+          
+            <section class="po-row">
+              <div class="po-md-6"></div>
+              <div class="po-md-2"></div>
+              <po-button
+                class="po-md-4"
+                p-label="Aplicar Valores"
+                (p-click)="changeValues()"
+              ></po-button>
+            </section>
+            
+        </po-container>
+
+      </form>
+    </po-accordion-item>
+  </po-accordion>
+
+  
