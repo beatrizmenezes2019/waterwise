@@ -1,9 +1,5 @@
 # WaterWise API Documentation
 
-## Pitch
-
-[Apresentação do domínio e arquitetura do sistema](https://drive.google.com/file/d/1nE6JIIMIdC9xOly_90cjpJGs-NXUg3Mu/view?usp=sharing).
-
 ## Overview
 
 WaterWise é uma API para monitoramento da qualidade da água que integra sensoriamento virtual, processamento de dados em tempo real e visualização de métricas. A aplicação utiliza uma arquitetura orientada a eventos para coleta de dados de sensores e oferece endpoints REST para gerenciamento de sistemas de água.
@@ -141,6 +137,8 @@ Lista todos os sistemas de água.
 3. EventService processa e persiste os dados
 4. ProcessingPipelineService processa os dados a cada minuto
 
+O diagrama de sequência detalhado deste fluxo pode ser encontrado em `docs/diagrams/persistence_sequence_diagram.png`. Este diagrama ilustra a interação entre o Message Broker, EventDrivenController e MongoDB para a persistência dos dados dos sensores.
+
 ### Fluxo de Twinning
 
 1. Scheduler dispara ProcessingPipelineService
@@ -148,6 +146,8 @@ Lista todos os sistemas de água.
 3. Calcula estatísticas para cada sensor
 4. Atualiza o estado do digital twin
 5. Persiste o estado atualizado
+
+O diagrama de sequência completo deste processo pode ser encontrado em `docs/diagrams/processing_pipeline_sequence_diagram.png`. Este diagrama mostra em detalhes como o ProcessingPipelineService interage com o MongoDB e os WaterSystem Twins para realizar o processamento e atualização dos estados.
 
 ## Configuração
 
