@@ -153,10 +153,15 @@ Lista todos os sistemas de água.
 
 A aplicação utiliza variáveis de ambiente para configuração:
 
+- MONGODB_CONNECTION_STRING
+- MONGODB_DATABASE_NAME=waterwise_v1
+- MONGODB_SENSOR_READINGS_COLLECTION=sensorReadings
+- MONGODB_WATER_SYSTEMS_COLLECTION=waterSystems
 - MQTT_BROKER_URL
 - MQTT_BROKER_PORT
-- MQTT_BROKER_CLIENT_ID
-- DEFAULT_WATER_SYSTEM_ID
+- MQTT_BROKER_CLIENT_ID=waterwise-api
+- DEFAULT_WATER_SYSTEM_ID=675e068d883edb78ee614cf2
+
 
 ## Persistência
 
