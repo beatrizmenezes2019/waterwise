@@ -35,7 +35,7 @@ src/
 #### EventDrivenController
 
 - Gerencia a conexão MQTT e processamento de eventos dos sensores
-- Subscreve no tópico "waterwise/+" para receber leituras dos sensores
+- Subscreve nos tópico "waterwise/+" para receber leituras dos sensores
 - Processa eventos e os encaminha para persistência
 
 #### RestController
@@ -54,14 +54,14 @@ src/
 #### ProcessingPipelineService
 
 - Executa a cada 60 segundos
-- Realiza o twinning digital dos sistemas de água
-- Processa dados de sensores dentro da janela de twinning
-- Calcula estatísticas (média, mínimo, máximo) para cada sensor
+- Recupera entradas para cada sensor dos sistema de água ativo na série temporal
+- Processa os dados dentro da janela de twinning com Pandas
+- Persiste as estatísticas (média, mínimo, máximo, último) para cada sensor
 
 #### RestService
 
 - Implementa a lógica de negócio para operações CRUD
-- Gerencia WaterSystems e suas configurações
+- Gerencia ```waterSystems``` e suas configurações
 
 ## API Endpoints
 
@@ -162,7 +162,7 @@ A aplicação utiliza variáveis de ambiente para configuração:
 
 - MongoDB é utilizado como banco de dados principal
 - Coleção sensorReadings armazena as leituras dos sensores como série temporal
-- Coleção water_systems armazena as configurações e estados dos sistemas
+- Coleção waterSystems armazena as configurações e estados dos sistemas
 
 ## Monitoramento e Logging
 
