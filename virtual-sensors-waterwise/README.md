@@ -37,7 +37,7 @@
 
 ## Conceito de Continuidade aplicado ao projeto:
 
-Neste projeto foi abordado o conceito de Continuidade da IoT. A aplicação é iniciada com o sensor virtual de temperatura inativado, pois temos o sensor de temperatura físico em operação. No entanto, caso haja uma falha no sensor físico e o mesmo perca a comunicação com o broker, a apicação monitora o tópico de envio dos dados de temperatura e cado o sensor físico permaneça por mais de 15 segundos sem enviar dados, o sensor virtual é automaticamente habilitado, simulando um sensor backup. Quando o sensor físico volta a operar e enviar dados ao Broker, o sensor virtual é automaticamente desabilidado. Esse controle é feito pelo campo "sensorId" presente na mensagem enviada ao Broker, onde o sensor físico possui um id específico, e o sensor virtual possui outro id; 
+Neste projeto foi abordado o conceito de Continuidade da IoT. A aplicação é iniciada com o sensor virtual de temperatura inativado, pois temos o sensor de temperatura físico em operação. No entanto, caso haja uma falha no sensor físico e o mesmo perca a comunicação com o broker, a aplicação faz a monitoria do tópico de envio dos dados de temperatura e caso o sensor físico permaneça por mais de 15 segundos sem enviar dados, o sensor virtual é automaticamente habilitado, simulando um sensor backup. Quando o sensor físico volta a operar e enviar dados ao Broker, o sensor virtual é automaticamente desabilidado. Esse controle é feito pelo campo "sensorId" presente na mensagem enviada ao Broker, onde o sensor físico possui um id específico, e o sensor virtual possui outro id; 
 
 ## A aplicação:
 
