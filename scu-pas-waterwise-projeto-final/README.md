@@ -137,7 +137,7 @@ Lista todos os sistemas de água.
 3. EventService processa e persiste os dados
 4. ProcessingPipelineService processa os dados a cada minuto
 
-O diagrama de sequência detalhado deste fluxo pode ser encontrado em `docs/diagrams/persistence_sequence_diagram.png`. Este diagrama ilustra a interação entre o Message Broker, EventDrivenController e MongoDB para a persistência dos dados dos sensores.
+[O diagrama de sequência detalhado deste fluxo pode ser encontrado aqui](https://github.com/beatrizmenezes2019/waterwise/blob/76d682e8efb8276021ae4681d8854a9eadd797ff/docs/diagrams/ds-persistencia-medicoes.png). Este diagrama ilustra a interação entre o Message Broker, EventDrivenController e MongoDB para a persistência dos dados dos sensores.
 
 ### Fluxo de Twinning
 
@@ -147,7 +147,7 @@ O diagrama de sequência detalhado deste fluxo pode ser encontrado em `docs/diag
 4. Atualiza o estado do digital twin
 5. Persiste o estado atualizado
 
-O diagrama de sequência completo deste processo pode ser encontrado em `docs/diagrams/processing_pipeline_sequence_diagram.png`. Este diagrama mostra em detalhes como o ProcessingPipelineService interage com o MongoDB e os WaterSystem Twins para realizar o processamento e atualização dos estados.
+[O diagrama de sequência completo deste processo pode ser encontrado aqui](https://github.com/beatrizmenezes2019/waterwise/blob/091dd9e6a2e366023ef6836c0cfee0ae0ac25cff/docs/diagrams/ds-processing-pipeline.png). Este diagrama mostra em detalhes como o ProcessingPipelineService interage com o MongoDB e os WaterSystem Twins para realizar o processamento e atualização dos estados.
 
 ## Configuração
 
